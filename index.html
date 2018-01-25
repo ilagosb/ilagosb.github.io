@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Learning Java</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="slick/slick.css" rel="stylesheet" type="text/css"/>
+<link href="slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body id="1">
+
+<div class="header0">
+	<h1>Курсы по программированию</h1>
+</div>
+
+<div class="body" >
+	<div class="top_head"></div>
+	<div class="text_contener">
+		<p class = "title">О нас</p>
+		<div class = "text">
+			<p>Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. А также многие известные личности набирают популярность среди определенны слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Следует отметить, что разбавленное изрядной долей эмпатии, рациональное мышление требует от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Но внедрение современных методик обеспечивает актуальность новых предложений.</p>
+		</div>
+		<div class="slider">
+						<div class="sl_div">
+							<img src="img/slider_foto1.jpg" alt="Фото 1" class="slImage">
+							<div class="sl_Text">
+								<h3 class="sl_Zag">Фото1</h3>
+								<p class="sl_Opis">Это фото №1</p>
+							</div>
+						</div>
+						<div class="sl_div">
+							<img src="img/slider_foto2.jpg" alt="Фото 2" class="slImage">
+							<div class="sl_Text">
+								<h3 class="sl_Zag">Фото2</h3>
+								<p class="sl_Opis">Это фото №2</p>
+							</div>
+						</div>
+						<div class="sl_div">
+							<img src="img/slider_foto3.jpg" alt="Фото 3" class="slImage">
+							<div class="sl_Text">
+								<h3 class="sl_Zag">Фото3</h3>
+								<p class="sl_Opis">Это фото №3</p>
+							</div>
+						</div>
+		</div>		
+	</div>
+    <div class="text_contener2">
+		<p class = "title2">Что мы предлагаем</p>
+		<div class = "text2">
+			<p>
+				Социально-экономическое развитие не оставляет шанса для приоретизации разума над эмоциями. Сделанные на базе интернет-аналитики выводы, вне зависимости от их уровня, должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Дальнейшее развитие различных форм деятельности предполагает независимые способы реализации прогресса профессионального сообщества. Следует отметить, что социально-экономическое развитие позволяет оценить значение распределения внутренних резервов и ресурсов. Кстати, независимые государства объединены в целые кластеры себе подобных.
+			</p>
+		</div>		
+	</div>
+	<div class = "contener_why" >
+		<div class="menu">
+			<div  class="old"><img src="img/icon_experience.png" alt="Опыт в обучении"><p>Опыт</p></div>
+			<div  class="time"><img src="img/icon_time.png" alt="Быстрое обучение"><p>Время</p></div>
+			<div  class="quality"><img src="img/icon_quality.png" alt="Качество обучения"><p>Качество</p></div>
+		</div>	
+	</div>
+	
+	<div class="laung_menu">	
+		<p>Выбери свой язык программирования</p>
+		<ul class="menuLang">
+			<li>C#</li>
+			<li>Java</li>
+			<li>JS</li>
+		</ul>
+	</div>
+	<div class="Price">
+		
+	</div>
+	<div class="bottom_head"></div>
+</div>
+
+<div class="footer">
+	
+</div>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script>
+	document.addEventListener('DOMContentLoaded',resizeBody);
+	document.addEventListener('DOMContentLoaded',setMenu);
+	document.addEventListener('DOMContentLoaded',function (){
+        resizeTextContener($(".body"));
+    });
+	window.addEventListener('resize',resizeBody);
+	window.addEventListener('resize',setMenu);
+	window.addEventListener('resize',function(){
+        resizeTextContener($(".body"));
+    });
+
+
+    function animationMenu(){
+
+    }
+
+	function setMenu(){
+			var wBody = $(".body").width();
+			var liOld = $(".old");
+			var liQuality = $(".quality");
+			var liMenuMargin= (wBody-(liOld.width()*3))/2-10;
+			liOld.css("margin-left",liMenuMargin);
+			liQuality.css("margin-right",liMenuMargin);
+	}
+
+	function seth1(){
+
+	}
+
+	function resizeBody(){
+		var w = $(window).width();
+		var getB = document.getElementsByClassName("body")[0];
+
+		if (w >= 1890){
+			getB.style.width = 1820 + "px";
+            $(".body").css({
+                "font-size":"15pt"
+            });
+            $(".title,.title2").css({
+                "font-size":"29pt",
+                "font-weight":"bold"
+            });
+            $(".text,.text2").css({
+                "font-size":"19pt",
+                "line-height":"25pt"
+            });
+            $(".sl_Zag").css({
+            	"font-size": "12pt"
+            });
+            $(".sl_Opis").css({
+            	"font-size": "10pt"
+            });
+		}
+		else if(w >= 1600){
+			getB.style.width = 1500 + "px";
+            $(".body").css({
+                "font-size":"14pt"
+            });
+            $(".title,.title2").css({
+                "font-size":"24pt",
+                "font-weight":"bold"
+            });
+            $(".text,.text2").css({
+                "font-size":"19pt",
+                "line-height":"23pt"
+            });
+             $(".sl_Zag").css({
+            	"font-size": "11pt"
+            });
+            $(".sl_Opis").css({
+            	"font-size": "9pt"
+            });
+		}
+		else if (w >= 1400){
+			getB.style.width = 1340 + "px";
+            $(".body").css({
+                "font-size":"12pt"
+            });
+            $(".title,.title2").css({
+                "font-size":"20pt",
+ 				"font-weight":"bold"
+            });
+            $(".text,.text2").css({
+                "font-size":"16pt",
+                "line-height":"19pt"
+            });
+             $(".sl_Zag").css({
+            	"font-size": "10pt"
+            });
+            $(".sl_Opis").css({
+            	"font-size": "8pt"
+            });
+		}
+		else if (w < 1400){
+			getB.style.width = 1266 + "px";
+            $(".body").css({
+                "font-size":"10pt"
+            });
+            $(".title,.title2").css({
+                "font-size":"18pt",
+                "font-weight":"bold"
+            });
+            $(".text,.text2").css({
+                "font-size":"14pt",
+                "line-height":"16pt"
+			});
+			 $(".sl_Zag").css({
+            	"font-size": "9pt"
+            });
+            $(".sl_Opis").css({
+            	"font-size": "7pt"
+            });
+        }
+		var bodySize = $("div.body").width();
+		var sizeMargin = +(w-bodySize)/2 +"px";
+		$(".body").css({
+			"margin-left": sizeMargin,
+			"margin-right": sizeMargin
+		});
+		$(".footer").css({
+			"width":bodySize,
+			"margin-left": sizeMargin,
+			"margin-right": sizeMargin
+		});
+	}
+
+	function resizeTextContener($Body){
+		var $text = $(".text");
+		var $text2 = $(".text2");
+        var $title = $(".title");
+        var $title2 = $(".title2");
+        $(".text").css({
+            "width": $Body.width()/2
+        });
+        $(".text_contener").css({
+            "height": $text.outerHeight(true) + $title.outerHeight(true)+25
+        });
+        var trHeight = ($Body.width()<1400) ? 250 : 300;
+        var trWidth =($Body.width()/2)/2;
+        
+        var $slider = $(".slider");
+        $slider.css({
+            "width":trWidth,
+            "height":trHeight,
+            "left": ($Body.width()/2)+ trWidth/2+45
+        });
+        var $slImg = $(".slImage")
+        $slImg.css({
+            "width":trWidth,
+            "height":trHeight
+        });
+        
+	}
+
+	
+
+	function test(){
+		alert("sfdsf");
+	}
+
+</script>
+</body>
+</html>
